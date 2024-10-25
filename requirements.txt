@@ -1,5 +1,5 @@
-pytest
-pytest-cov
+pandas
 faker
 python-dotenv
-pandas
+pytest
+pytest-cov
