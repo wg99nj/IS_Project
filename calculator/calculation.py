@@ -1,4 +1,4 @@
-import pandas as pd # type: ignore
+import pandas as pd 
 
 class Calculation:
     history = pd.DataFrame(columns=["operation", "input", "result"])
