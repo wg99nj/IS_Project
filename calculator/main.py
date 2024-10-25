@@ -1,5 +1,5 @@
 import os
-from dotenv import load_dotenv # type: ignore
+from dotenv import load_dotenv 
 from calculator.calculation import Calculation
 from calculator.command_loader import CommandLoader
 
