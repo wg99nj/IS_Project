@@ -1,5 +1,6 @@
 # calculator/calculation.py
-import pandas as pd # type: ignore
+
+import pandas as pd
 from typing import Any, Tuple
 
 class Calculation:
@@ -17,3 +18,11 @@ class Calculation:
     @classmethod
     def get_history(cls) -> pd.DataFrame:
         return cls.history
+
+    @classmethod
+    def get_last_calculation(cls) -> pd.Series:
+        """Retrieve the last calculation entry from the history."""
+        if not cls.history.empty:
+            return cls.history.iloc[-1]
+        else:
+            return pd.Series()  # Returns an empty Series if no history exists
