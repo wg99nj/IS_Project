@@ -31,7 +31,6 @@ This project is an interactive command-line calculator supporting basic arithmet
    ```
 
 2. **Set up Virtual Environment**:
-
 ```bash
 python -m venv env
 source env/bin/activate
@@ -46,6 +45,59 @@ pip install -r requirements.txt
 ```plaintext
 ENVIRONMENT=development
 ```
+### Usage 
+1. **Run the calculator in interactive mode**:
+```plaintext
+python main.py
+```
+
+2. **enter commands like**:
+```plaintext
+> add 3 5
+> mean 5 10 15
+> history
+> exit
+```
+
+## Design Patterns
+
+### Design Commands
+
+The Command Pattern is used to encapsulate calculator operations into separate command classes, making the application easily extensible for new operations. Each command (e.g., add, subtract) implements an execute() method, enabling consistent invocation from the REPL interface.
+
+### Plugin Architecture
+
+A plugin-based design is employed to dynamically load calculator commands, allowing commands to be modular and the program to auto-detect and integrate them. This setup simplifies adding new functionality without modifying the core code.
+
+## Testing
+
+This project includes comprehensive testing using pytest to ensure functionality and maintain code quality. Run the following command to execute tests:
+```bash
+pytest --cov=calculator --cov-report=term-missing
+```
+
+## Logging 
+
+Logging is configured to capture important events, including errors and usage information. Logs are output to calculator.log for analysis and debugging purposes.
+
+## Configuration
+
+Application configurations are managed through environment variables stored in the .env file, which can control behavior across different environments (development, production, etc.).
+
+## Commit History 
+
+To ensure traceable development progress, commit messages are structured to be informative and grouped logically by feature or fix. Code quality is maintained with linting and adherence to standard Python coding practices.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
