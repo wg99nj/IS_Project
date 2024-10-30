@@ -22,18 +22,32 @@ This project is an interactive command-line calculator supporting basic arithmet
 - Pip
 - Virtual environment setup recommended
 
-### Installation
+### Installation 
 
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/yourusername/calculator_project.git
    cd calculator_project
-
+   ```
 2. **Set up Virtual Environment**:
+
+python -m venv env
+source env/bin/activate
 ```bash
 python -m venv env
-source env/bin/activate  
-
+source env/bin/activate
+```
 3. **Install Dependencies**:
+```bash
+pip install -r requirements.txt
+```
+4. **create a env.**:
+```bash
+ENVIRONMENT=development
+```
+
+
+
+
 
 
