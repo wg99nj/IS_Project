@@ -28,3 +28,12 @@ This project is an interactive command-line calculator supporting basic arithmet
    ```bash
    git clone https://github.com/yourusername/calculator_project.git
    cd calculator_project
+
+2. **Set up Virtual Environment**:
+```bash
+python -m venv env
+source env/bin/activate  
+
+3. **Install Dependencies**:
+
+
